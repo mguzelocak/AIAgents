@@ -16,7 +16,7 @@ Required environment variables (stored in `.env`):
 - MYSQL_PASSWORD
 - DB
 
-Author: Murat Can
+Author: @mguzelocak
 """
 
 from dotenv import load_dotenv
@@ -101,21 +101,6 @@ def get_product() -> dict[str, dict]:
 
     return product_map
 
-
-def save_products_to_json(products: dict[str, dict], filename: str = "data/external/products.json") -> None:
-    """
-    Saves the product dictionary to a local JSON file.
-
-    Args:
-        products (dict[str, dict]): The product data to be saved.
-        filename (str): Path to the JSON file.
-    """
-    with open(filename, "w", encoding="utf-8") as f:
-        json.dump(products, f, ensure_ascii=False, indent=2)
-    print(f"✅ Saved {len(products)} products to {filename}")
-
-
-@function_tool
 def load_products_from_json() -> dict[str, dict]:
     """
     Loads products from a local JSON file for use with AI agents.
