@@ -5,3 +5,4 @@ __pycache__/
 *.json
 */.gitkeep
 aienv
+*/*/.gitkeep
