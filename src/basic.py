@@ -16,6 +16,7 @@ productAsistant = Agent(
     tools=[
     get_all_product_titles_and_prices
   ],
+  model="gpt-4o",
   handoff_description="Senin bir Beyorganik Gida urun tavsiyeleri yapan bir asistansin. Verilen querye gore uygun urunleri tavsiye ediyorsun."
 )
 
