@@ -4,3 +4,4 @@ __pycache__/
 .idea/
 *.json
 */.gitkeep
+aienv
